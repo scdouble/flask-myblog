@@ -29,4 +29,5 @@ flask db upgrade
 echo --------------------
 echo Generating test data
 echo --------------------
-python test_data.py
+# python test_data.py
+python fake_user_role.py
