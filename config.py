@@ -19,3 +19,5 @@ class DevConfig(Config):
     DEBUG = True
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://postgres:password@localhost:15432/myblog"
+    CELERY_BROKER_URL = "amqp://rabbitmq:rabbitmq@localhost//"
+    CELERY_RESULT_BACKEND = "amqp://rabbitmq:rabitmq@localhost//"
